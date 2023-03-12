@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MI INDIA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="../script/script.js"></script>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<div>
+    <div class="header">
+    <div class="container-fluid firstNav" onmouseover="cCardListHide()">
+        <div class="contain">
+            <ul class="topNavItems typeNone">
+                <li class="entry"><a class="text" href="#home">MI INDIA</a></li>
+                <li class="entry"><a class="text" href="#news">GET MI STORE APP</a></li>
+                <li class="entry"><a class="text" href="#contact">ONLINE HELP</a></li>
+                <li class="entry dropdown"><a class="text dropbtn bt1" href="#about">RETAIL STORE <i class="fa fa-angle-down arr"></i> </a>
+                    <div class="dropdown-content">
+                        <a class="ddb text" href="#">MI HOMES</a>
+                        <a class="ddb text" href="#">MI STORES</a>
+                        <a class="ddb text" href="#">MI AUTHOTISED STORES</a>
+                    </div>
+                </li>
+                <ul class="leftMenu">
+                    <li class="entry dropdown two"><a class="dropbtn bt2 text" href="#news"><i class="fa fa-shopping-cart arr"></i> CART ( 0 )</a>
+                        <div class="dropdown-content cart">Your cart is empty!</div>
+                    </li>
+                    <li class="entry"><a class="text" href="#news">SIGN UP</a></li>
+                    <li class="entry"><a class="text" href="#home">SIGN IN</a></li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid secondNav" id="secondNav">
+    <div class="row">
+        <div class="col-1" onmouseover="cCardListHide()">
+            <div class="logo">
+                <div class="milogo">
+                    <div class="milogo-wrapper">
+                        <img class="img" src="../images/logo/mi-logo.svg"/>
+                    </div> 
+                </div>
+            </div> 
+        </div>
+        <div class="col-9">
+            <div class="catagories">
+                <div class="catagoriesList">
+                    <ul class="cgList typeNone">
+                        <li class="SNL" onmouseover="cCardListShowMiMobile()">MI Phones</li>
+                        <li class="SNL" onmouseover="cCardListShowRmMobile()">RedMi Phones</li>
+                        <li class="SNL" onmouseover="cCardListShowTv()">TV</li>
+                        <li class="SNL" onmouseover="cCardListShowLap()">Laptops</li>
+                        <ul class="typeNone">
+                             <li class="SNL" onmouseover="cCardListShowFit()">Fitness&</li>
+                             <li class="SNL" onmouseover="cCardListShowFit()">LifeStyle</li>
+                        </ul> 
+                        <li class="SNL" onmouseover="cCardListShowHome()">Home</li>
+                        <li class="SNL" onmouseover="cCardListShowAudio()">Audio</li>
+                        <li class="SNL" onmouseover="cCardListShowAccess()">Accessories</li>
+                    </ul>
+                </div>
+             </div>
+        </div>
+        <div class="col-2" onmouseover="cCardListHide()">
+            <div class="example">
+                <input type="text" placeholder="Search Products" name="search2">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </div>
+        </div>
+    </div>
+    </div>
+    <div class="contrainer-fluid catogiriesCard" onmouseover="test()" id="cCardList">
+     <div class="row">
+         <div class="col-2">
+             <ul class="typeNone align">
+                <li ><img id="item1src" class="CImageStyle" src="../images/RM phones/rm1.png"></li>
+                <li id="item1Name" class="CCostTitle">₹10,000</li>
+                <li id="item1Cost" class="CCostStyle">₹10,000</li>
+                
+            </ul>
+         </div>
+         <div class="col-2">
+            <ul class="typeNone align">
+                <li ><img id="item2src" class="CImageStyle" src="D:\OptionMatrix\Trainig\frontEnd\Projects\MiIndia\images\MI Phones\mi2.png"/></li>
+                <li id="item2Name" class="CCostTitle">₹10,000</li>
+                <li id="item2Cost" class="CCostStyle">₹10,000</li>
+                
+            </ul>
+         </div>
+         <div class="col-2">
+            <ul class="typeNone align">
+                <li ><img id="item3src" class="CImageStyle" src="D:\OptionMatrix\Trainig\frontEnd\Projects\MiIndia\images\MI Phones\mi3.png"/></li>
+                <li id="item3Name" class="CCostTitle">₹10,000</li>
+                <li id="item3Cost" class="CCostStyle">₹10,000</li>
+                
+            </ul>
+         </div>
+         <div class="col-2">
+            <ul class="typeNone align">
+                <li ><img id="item4src" class="CImageStyle" src="D:\OptionMatrix\Trainig\frontEnd\Projects\MiIndia\images\MI Phones\mi4.jpg"/></li>
+                <li id="item4Name" class="CCostTitle">₹10,000</li>
+                <li id="item4Cost" class="CCostStyle">₹10,000</li>
+                
+            </ul>
+         </div>
+         <div class="col-2">
+            <ul class="typeNone align">
+                <li ><img id="item5src" class="CImageStyle" src="D:\OptionMatrix\Trainig\frontEnd\Projects\MiIndia\images\MI Phones\mi5.png"/></li>
+                <li id="item5Name" class="CCostTitle">₹10,000</li>
+                <li id="item5Cost" class="CCostStyle">₹10,000</li>
+                
+            </ul>
+         </div>
+         <div class="col-2">
+            <ul class="typeNone align">
+                <li ><img id="item6src" class="CImageStyle" src="D:\OptionMatrix\Trainig\frontEnd\Projects\MiIndia\images\MI Phones\mi6.png"/></li>
+                <li id="item6Name" class="CCostTitle">₹10,000</li>
+                <li id="item6Cost" class="CCostStyle">₹10,000</li>
+                
+            </ul>
+         </div>
+     </div>
+    </div>
+    <div class="carouselView" id="CV" onmouseover="cCardListHide()">
+        <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../images/cs/mi1.jpg" class="d-block w-100 " alt="Phone">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/cs/mi2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/cs/mi3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item ">
+                <img src="../images/cs/mi4.jpg" class="d-block w-100" alt="Phone">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/cs/mi5.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/cs/mi6.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item ">
+                <img src="../images/cs/mi7.jpg" class="d-block w-100" alt="Phone">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/cs/mi8.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/cs/mi9.jpg" class="d-block w-100" alt="...">
+              </div>
+              
+            </div>
+          </div> 
+    </div>
+    <div style="height:450px;width: 100%;position: relative;" onmouseover="cCardListHide()">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </div>
+    </div>
+    <div class="body" onmouseover="cCardListHide()">
+    <div class="container-fluid cardView1" >
+         <div class="row">
+              <div class="col-4 ">
+                 <img class="hoverEffect1" src="../images/card1/c1.jpg"/>
+             </div>
+             <div class="col-4">
+                <img class="hoverEffect1" src="../images/card1/c2.jpg"/>
+            </div>
+            <div class="col-4">
+                <img class="hoverEffect1" src="../images/card1/c3.jpg"/>
+            </div>
+         </div>
+    </div>
+    <div class="StarHeadding">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-2 stLine"></div>
+            <div class="col-4"><span class="Hedding">STAR PRODUCTS</span></div>
+            <div class="col-2 stLine"></div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <div class="cardVeiw2 contrainer-fluid">
+        <!-- <div class="row">
+            <div class="col-6">
+                <img src="../images/card2/c1.jpg"/>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                  <div class="col-6">
+                     <img style="float: left;" src="../images/card2/c2.jpg" alt="">
+                  </div>
+                  <div class="col-6">
+                         <img src="../images/card2/c3.png" alt="">
+                  </div>
+                </div>
+                <div>
+                    <img src="../images/card2/c4.jpg" alt="">
+                </div>
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col-6">
+                <img class="hoverEffect1" style="height: 40vw;width:45.8vw;" src="../images/card2/c1.jpg" alt="">
+            </div>
+            <div class="col-6" style="padding-left:1vw;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6">
+                            <img class="hoverEffect1" style="width: 21vw;height: 20vw;" src="../images/card2/c2.jpg" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img class="hoverEffect1" style="width: 21vw;height: 20vw;padding-left: 1vw;" src="../images/card2/c3.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <img class="hoverEffect1" style="width: 41vw;height: 20vw;padding-top: 0.2vw;" src="../images/card2/c4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="StarHeadding">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-2 stLine"></div>
+            <div class="col-4"><span class="Hedding">HOT ACCESSORIES</span></div>
+            <div class="col-2 stLine"></div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <div class="container-fluid secondNav">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <div class="catagories">
+                    <div class="catagoriesList">
+                        <ul class="cgList typeNone">
+                            <li onmouseover="setMS()" class="SNL" >Music Store</li>
+                            <li onmouseover="setSD()" class="SNL" >Smart Devices</li>
+                            <li onmouseover="setH()" class="SNL" >Home</li>
+                            <li onmouseover="setLS()" class="SNL" >Lifestyle</li>
+                            <li onmouseover="setMA()" class="SNL" >Mobile Accessories</li>
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+    <div class="cardVeiw2">
+        <div class="row">
+             <div class="col-3">
+                 <img class="hoverEffect1" id="img1" style="width:20vw;height:43vw;" src="../images/MS/ms1.jpg" alt="">
+             </div>
+             <div class="col-9">
+                 <div class="row">
+                    <div class="col-4">
+                        <div class="imgStyle hoverEffect1">
+                            <div>
+                            <img id="img2" style="height: 15vw; width: 15vw;margin-left: 3vw; margin-top: 1vw;"  src="../images/MS/ms2.jpg" alt="">
+                            </div>
+                            <div class="align" style="height:6vw;width: 21vw;margin-top: 1vw;">
+                                <span id="name2" class="weight" >Mi Dual Driver In-ear Earphones</span><br/>
+                                <span id="cose2" class="CCostStyle">₹ 799</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-4">
+                        <div class="imgStyle hoverEffect1">
+                            <div>
+                            <img id="img3" style="height: 15vw; width: 15vw;margin-left: 3vw; margin-top: 1vw;"  src="../images/MS/ms3.png" alt="">
+                            </div>
+                            <div class="align" style="height:6vw;width: 21vw;margin-top: 1vw;">
+                                <span id="name3" class="weight" >Mi Soundbar
+                                    </span><br/>
+                                <span id="cose3" class="CCostStyle">₹ 4,999</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="imgStyle hoverEffect1">
+                            <div>
+                            <img id="img4" style="height: 15vw; width: 15vw;margin-left: 3vw; margin-top: 1vw;"  src="../images/MS/ms4.jpg" alt="">
+                            </div>
+                            <div class="align" style="height:6vw;width: 21vw;margin-top: 1vw;">
+                                <span id="name4" class="weight" >Mi Super Bass Wireless Headphones
+                                    
+                                    </span><br/>
+                                <span id="cose4" class="CCostStyle">₹ 1,799</span>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="row">
+                    <div class="col-4">
+                        <div class="imgStyle hoverEffect1" style=" margin-top:1vw;">
+                            <div>
+                            <img id="img5" style="height: 15vw; width: 15vw;margin-left: 3vw; margin-top: 1vw;"  src="../images/MS/ms5.jpg" alt="">
+                            </div>
+                            <div class="align" style="height:6vw;width: 21vw;margin-top: 1vw;">
+                                <span id="name5" class="weight" >Mi Portable Bluetooth Speaker (16W)</span><br/>
+                                <span id="cose5" class="CCostStyle">₹ 2,499</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="imgStyle hoverEffect1" style=" margin-top:1vw;">
+                            <div>
+                            <img id="img6" style="height: 15vw; width: 15vw;margin-left: 3vw; margin-top: 1vw;"  src="../images/MS/ms6.jpg" alt="">
+                            </div>
+                            <div class="align" style="height:6vw;width: 21vw;margin-top: 1vw;">
+                                <span id="name6" class="weight" >Mi Neckband Bluetooth Earphone Pro
+                                    </span><br/>
+                                <span id="cose6" class="CCostStyle">₹ 1,799</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <img id="img7" style=" margin-top:1vw;" class="imgStyle hoverEffect1" src="../images/MS/ms7.png" alt="">
+                    </div>
+                 </div>  
+             </div>
+        </div>
+    </div>
+    <div class="StarHeadding">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-2 stLine"></div>
+            <div class="col-4"><span class="Hedding">PRODUCT REVIEWS</span></div>
+            <div class="col-2 stLine"></div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <div class="contrainer-fluid cardVeiw2">
+        <div class="row ">
+            <div class="col-6 ">
+                <div class="hoverEffect1 bg-white">
+                <img style="width:43vw; height:18vw;"  src="../images/pr/pr1.jpg" alt="">
+                <div class="pad">
+                <span class="hdText">PRO DISPLAY. PRO CAMERAS</span><br/>
+                <span class="shdText">REDMI NOTE 10 PRO </span>
+                <span class="cost">₹ 15,999</span>
+            </div> 
+           </div>
+            </div>
+
+            <div class="col-6 ">
+                <div class="hoverEffect1 bg-white">
+                <img style="width:43vw ;height:18vw;" src="../images/pr/pr2.jpg" alt="">
+                <div class="pad">
+                <span class="hdText">TRULY SMART. TRULY SAFE. TRULY CONVENIENT.</span><br/>
+                <span class="shdText">MI SMART WATER PURIFIER </span>
+                <span class="cost">₹ 12,999</span>
+            </div>
+           </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="StarHeadding">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-2 stLine"></div>
+            <div class="col-4"><span class="Hedding">VIDEOS</span></div>
+            <div class="col-2 stLine"></div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <div class="container-fluid vedio" >
+        <div class="row">
+             <div class="col-4">
+                <img src="../images/vedio/v1.png"/>
+            </div>
+            <div class="col-4">
+               <img src="../images/vedio/v2.jpg"/>
+           </div>
+           <div class="col-4">
+               <img src="../images/vedio/v3.jpg"/>
+           </div>
+        </div>
+   </div>
+   <div class="StarHeadding">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-2 stLine"></div>
+        <div class="col-4"><span class="Hedding">IN THE PRESS</span></div>
+        <div class="col-2 stLine"></div>
+        <div class="col-2"></div>
+    </div>
+</div>
+    <div class="secondCV">
+        <div id="carousel2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carousel2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carousel2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carousel2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carousel2" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carousel2" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carousel2" data-bs-slide-to="8" aria-label="Slide 9"></button>
+              <button type="button" data-bs-target="#carousel2" data-bs-slide-to="9" aria-label="Slide 10"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img style="height:40vw;" src="../images/cs2/c1.jpg" class="d-block w-100" alt="...">
+            </div>
+              <div class="carousel-item">
+                <img style="height:40vw;" src="../images/cs2/c2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img style="height:40vw;" src="../images/cs2/c3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img style="height:40vw;" src="../images/cs2/c4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img style="height:40vw;" src="../images/cs2/c5.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img style="height:40vw;" src="../images/cs2/c6.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img style="height:40vw;" src="../images/cs2/c7.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img style="height:40vw;" src="../images/cs2/c8.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img style="height:40vw;" src="../images/cs2/c9.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img style="height:40vw;" src="../images/cs2/c10.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <div>
+        
+    </div>
+    <div class="container-fluid fFooter" >
+        <div class="row">
+             <div class="col-4 innerItems">
+                 <div class="container-fluid">
+                     <div class="row">
+                         <div class="col-2">
+                            <svg class="svg-icon" style="width: 3em; height: 3em;vertical-align: middle;fill: #b0b0b0;;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M512 76.0832a428.7488 428.7488 0 0 0-248.32 78.4384l21.8112-97.5872a27.136 27.136 0 0 0-52.9408-11.8784L196.9152 204.8a27.136 27.136 0 0 0 20.48 32.3584l159.6416 35.6352a26.8288 26.8288 0 0 0 5.9392 0.6144 27.136 27.136 0 0 0 6.144-53.6576l-94.0032-20.48A375.0912 375.0912 0 0 1 512 130.2528a379.6992 379.6992 0 0 1 327.68 570.368 27.136 27.136 0 1 0 46.7968 27.3408A433.8688 433.8688 0 0 0 512 76.0832zM801.792 787.6608l-158.9248-38.2976a27.136 27.136 0 1 0-12.6976 52.736l93.5936 22.6304a371.4048 371.4048 0 0 1-218.2144 64.8192 379.6992 379.6992 0 0 1-318.3616-576.1024 27.136 27.136 0 0 0-46.3872-28.16 433.8688 433.8688 0 0 0 363.8272 658.3296H512a428.544 428.544 0 0 0 241.9712-74.24l-23.2448 97.28a27.136 27.136 0 0 0 20.48 32.6656 26.4192 26.4192 0 0 0 6.3488 0.7168 27.136 27.136 0 0 0 26.3168-20.48l38.4-158.9248a27.136 27.136 0 0 0-20.48-32.9728z" fill="" /></svg>
+                         </div>
+                         <div class="col-10">
+                            <span class="strong">Hassle-free replacement</span><br/>
+                            <span style="color: #b0b0b0;">10-day easy replacement policy on mi.com</span>
+                         </div>
+                     </div>
+                 </div>
+                
+            </div>
+            <div class="col-4 innerItems">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-2">
+                            <svg class="svg-icon" style="width: 3em; height: 3em;vertical-align: middle;fill: #b0b0b0;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M964.72 170.39a33.214 33.214 0 0 0-9.964 0 369.344 369.344 0 0 1-103.96 14.946 370.008 370.008 0 0 1-312.548-170.39 33.214 33.214 0 0 0-54.804 0 370.34 370.34 0 0 1-312.88 171.719 370.673 370.673 0 0 1-101.968-14.282 33.214 33.214 0 0 0-9.632 0 33.214 33.214 0 0 0-33.215 33.214v332.144C25.75 803.456 391.108 1024 512.01 1024c94.328 0 486.258-218.883 486.258-486.259V203.272a33.214 33.214 0 0 0-33.546-32.882zM778.057 429.462L512.34 657.313a33.214 33.214 0 0 1-43.178 0 30.225 30.225 0 0 1-4.318-2.657l-143.819-136.18a33.214 33.214 0 0 1 45.504-48.16l123.89 117.247 242.797-208.255a33.214 33.214 0 1 1 43.511 50.154z"  /></svg>
+                        </div>
+                        <div class="col-10">
+                           <span class="strong">100% secure payments</span><br/>
+                           <span style="color: #b0b0b0;">We support Cards, Wallets, EMI and COD</span>
+                        </div>
+                    </div>
+                </div>
+          
+           </div>
+           <div class="col-4 innerItems">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-2">
+               <svg class="svg-icon" style="width: 3em; height: 3em;vertical-align: middle;fill: #b0b0b0;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M17.066667 1024c-3.413333 0-6.826667 0-10.24-3.413333-3.413333-3.413333-6.826667-6.826667-6.826667-13.653334v-614.4c0-6.826667 6.826667-13.653333 13.653333-17.066666l307.2-68.266667c3.413333 0 10.24 0 13.653334 3.413333 3.413333 3.413333 6.826667 6.826667 6.826666 13.653334v580.266666c0 6.826667-3.413333 13.653333-10.24 17.066667l-307.2 102.4H17.066667zM34.133333 406.186667v576.853333l273.066667-92.16v-546.133333l-273.066667 61.44zM665.6 1024c-3.413333 0-6.826667 0-10.24-3.413333-3.413333-3.413333-6.826667-6.826667-6.826667-13.653334v-614.4c0-6.826667 6.826667-13.653333 13.653334-17.066666l341.333333-68.266667c3.413333 0 10.24 0 13.653333 3.413333 3.413333 3.413333 6.826667 6.826667 6.826667 13.653334v580.266666c0 6.826667-3.413333 13.653333-13.653333 17.066667l-341.333334 102.4h-3.413333z m17.066667-617.813333v576.853333l307.2-92.16v-546.133333l-307.2 61.44z" fill="" /><path d="M665.6 1024h-3.413333l-341.333334-102.4c-10.24-3.413333-13.653333-10.24-13.653333-17.066667v-580.266666c0-6.826667 3.413333-10.24 6.826667-13.653334s10.24-3.413333 13.653333-3.413333l44.373333 10.24c6.826667 0 10.24 3.413333 13.653334 10.24 34.133333 81.92 81.92 167.253333 102.4 211.626667 20.48-34.133333 58.026667-98.986667 92.16-167.253334 3.413333-6.826667 10.24-10.24 17.066666-10.24l71.68 13.653334c6.826667 0 13.653333 10.24 13.653334 17.066666v614.4c0 6.826667-3.413333 10.24-6.826667 13.653334-3.413333 3.413333-6.826667 3.413333-10.24 3.413333zM341.333333 890.88l307.2 92.16V406.186667l-44.373333-10.24c-47.786667 95.573333-102.4 180.906667-102.4 184.32-3.413333 6.826667-6.826667 6.826667-13.653333 6.826666s-10.24-3.413333-13.653334-10.24c0 0-68.266667-122.88-116.053333-232.106666H341.333333v546.133333z" fill="" /><path d="M488.106667 590.506667c-3.413333 0-3.413333 0 0 0-6.826667 0-10.24-3.413333-13.653334-10.24C464.213333 566.613333 307.2 286.72 307.2 187.733333c0-102.4 85.333333-187.733333 187.733333-187.733333S682.666667 85.333333 682.666667 187.733333c0 98.986667-174.08 382.293333-180.906667 392.533334-3.413333 6.826667-10.24 10.24-13.653333 10.24zM494.933333 34.133333C409.6 34.133333 341.333333 102.4 341.333333 187.733333c0 68.266667 95.573333 256 146.773334 351.573334C542.72 443.733333 648.533333 256 648.533333 187.733333 648.533333 102.4 580.266667 34.133333 494.933333 34.133333z" fill="" /><path d="M494.933333 273.066667C447.146667 273.066667 409.6 235.52 409.6 187.733333S447.146667 102.4 494.933333 102.4 580.266667 139.946667 580.266667 187.733333 542.72 273.066667 494.933333 273.066667z m0-136.533334c-27.306667 0-51.2 23.893333-51.2 51.2S467.626667 238.933333 494.933333 238.933333 546.133333 215.04 546.133333 187.733333 522.24 136.533333 494.933333 136.533333z" fill="" /></svg>
+                    </div>
+                    <div class="col-10">
+                       <span class="strong">Vast service network</span><br/>
+                       <span style="color: #b0b0b0;">1000 Mi service-centers across 600 cities</span>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+   </div>
+   <div class="container-fluid sFooter" style="margin-top: 4vw;padding:0vw 6vw;">
+       <div class="row">
+           <div class="col-6">
+               <div class="container-fluid">
+                   <div class="row" style="padding-bottom: 3vw;cursor: default;">
+                       <div class="col-6">
+                        <h3 class="tt">LET'S STAY IN TOUCH</h3>
+                        <p class="dd">Get updates on sales specials and more</p>
+                    </div>
+                       <div class="col-6">
+                        <input type="email" class="form-control" id="input" placeholder="Enter Email Adress">
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-1"></div>
+           <div class="col-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6" style="cursor: default;">
+                        <h3 class="tt">FOLLOW MI</h3>
+                        <p class="dd">We want to hear from you!</p>
+                        </div>
+                    <div class="col-6">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-3">
+                                    <svg class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: #b0b0b0;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M725.333333 149.333333a21.333333 21.333333 0 0 0-21.333333-21.333333H597.333333a203.52 203.52 0 0 0-213.333333 192v115.2H277.333333a21.333333 21.333333 0 0 0-21.333333 21.333333v110.933334a21.333333 21.333333 0 0 0 21.333333 21.333333H384v285.866667a21.333333 21.333333 0 0 0 21.333333 21.333333h128a21.333333 21.333333 0 0 0 21.333334-21.333333v-285.866667h111.786666a21.333333 21.333333 0 0 0 20.906667-15.786667l30.72-110.933333a21.333333 21.333333 0 0 0-20.48-26.88H554.666667V320a42.666667 42.666667 0 0 1 42.666666-38.4h106.666667a21.333333 21.333333 0 0 0 21.333333-21.333333z"  /></svg>
+                                </div>
+                                <div class="col-3">
+                                    <svg class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: #b0b0b0;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M981.333333 414.293333a362.666667 362.666667 0 0 0-38.826666-176.213333 124.586667 124.586667 0 0 0-73.386667-42.666667A3343.36 3343.36 0 0 0 512 182.186667a3347.2 3347.2 0 0 0-355.84 12.8 122.453333 122.453333 0 0 0-62.293333 31.573333c-38.4 35.413333-42.666667 96-46.933334 147.2a2060.373333 2060.373333 0 0 0 0 276.48 407.466667 407.466667 0 0 0 12.8 85.333333 133.973333 133.973333 0 0 0 30.293334 58.026667 122.026667 122.026667 0 0 0 63.573333 33.28 1927.68 1927.68 0 0 0 277.333333 14.08c149.333333 2.133333 280.32 0 435.2-11.946667a122.88 122.88 0 0 0 65.28-33.28 106.24 106.24 0 0 0 26.026667-42.666666 451.413333 451.413333 0 0 0 22.186667-145.066667c1.706667-23.893333 1.706667-168.106667 1.706666-193.706667zM415.573333 633.6V369.493333l252.586667 132.693334c-70.826667 39.253333-164.266667 83.626667-252.586667 131.413333z"  /></svg>
+                                </div>
+                                <div class="col-3">
+                                    <svg class="svg-icon" style="width: 1.0009765625em; height: 1em;vertical-align: middle;fill: #b0b0b0;overflow: hidden;" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M1024.032 194.432c-37.664 16.704-78.176 28-120.672 33.088 43.36-26.016 76.672-67.168 92.384-116.224-40.608 24.064-85.568 41.568-133.408 50.976-38.336-40.832-92.928-66.336-153.344-66.336-116.032 0-210.08 94.048-210.08 210.08 0 16.48 1.856 32.512 5.44 47.872-174.592-8.768-329.408-92.416-433.024-219.52-18.08 31.04-28.448 67.104-28.448 105.632 0 72.896 37.088 137.184 93.472 174.88-34.432-1.088-66.816-10.528-95.168-26.272-0.032 0.864-0.032 1.76-0.032 2.656 0 101.792 72.416 186.688 168.512 205.984-17.632 4.8-36.192 7.36-55.36 7.36-13.536 0-26.688-1.312-39.52-3.776 26.72 83.456 104.32 144.192 196.256 145.888-71.904 56.352-162.496 89.92-260.928 89.92-16.96 0-33.664-0.992-50.112-2.944 92.96 59.616 203.392 94.4 322.048 94.4 386.432 0 597.728-320.128 597.728-597.76 0-9.12-0.192-18.176-0.608-27.168 41.056-29.632 76.672-66.624 104.832-108.736z"  /></svg>
+                                </div>
+                                <div class="col-3">
+                                    <svg class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: #b0b0b0;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M853.333333 277.333333C853.333333 289.28 843.946667 298.666667 832 298.666667L746.666667 298.666667C734.72 298.666667 725.333333 289.28 725.333333 277.333333L725.333333 192C725.333333 180.053333 734.72 170.666667 746.666667 170.666667L832 170.666667C843.946667 170.666667 853.333333 180.053333 853.333333 192M192 853.333333C180.053333 853.333333 170.666667 843.946667 170.666667 832L170.666667 469.333333 259.84 469.333333C257.28 482.986667 256 497.493333 256 512 256 653.226667 370.773333 768 512 768 653.226667 768 768 653.226667 768 512 768 497.493333 766.293333 482.986667 764.16 469.333333L853.333333 469.333333 853.333333 832C853.333333 843.946667 843.946667 853.333333 832 853.333333M512 341.333333C606.293333 341.333333 682.666667 417.706667 682.666667 512 682.666667 606.293333 606.293333 682.666667 512 682.666667 417.706667 682.666667 341.333333 606.293333 341.333333 512 341.333333 417.706667 417.706667 341.333333 512 341.333333M853.333333 85.333333 170.666667 85.333333C123.306667 85.333333 85.333333 123.306667 85.333333 170.666667L85.333333 853.333333C85.333333 900.266667 123.733333 938.666667 170.666667 938.666667L853.333333 938.666667C900.266667 938.666667 938.666667 900.266667 938.666667 853.333333L938.666667 170.666667C938.666667 123.306667 900.266667 85.333333 853.333333 85.333333Z"  /></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+           <div class="col-1"></div>
+       </div>
+   </div>
+</div>
+<div class="footer" style="padding:0vw 2vw;background-color: #212121;color: #b0b0b0;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <ul class="typeNone">
+                    <li class="fHeader">SUPPORT</li>
+                    <li class="fData">Online Help</li>
+                    <li class="fData">Customer Service</li>
+                    <li class="fData">Shipping FAQ</li>
+                    <li class="fData">Service Centres</li>
+                    <li class="fData">Warranty</li>
+                    <li class="fData">Bulk Orders</li>
+                    <li class="fData">User Guide</li>
+                    <li class="fData">Laptop Drivers</li>
+                    <li class="fData">Mi Screen Protect</li>
+                    <li class="fData">Mi Extended Warranty</li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <ul class="typeNone">
+                    <li class="fHeader">SHOP AND LEARN</li>
+                    <li class="fData">Mi 10i / Mi 10T Series</li>
+                    <li class="fData">Mi 11 Ultra / Mi 11X / Mi 11X Pro</li>
+                    <li class="fData">Redmi 8 / Redmi 9 / Redmi 9 Prime</li>
+                    <li class="fData">Redmi 9i / Redmi 9A</li>
+                    <li class="fData">Redmi Note 10 / Redmi Note 10 Pro / Redmi Note 10 Pro Max</li>
+                    <li class="fData">Redmi Note 9 Pro / Redmi Note 9  / Redmi Note 9 Pro Max</li>
+                </ul>
+            </div>
+            
+
+
+            <div class="col-2">
+                <ul class="typeNone">
+                    <li class="fHeader">RETAIL STORE</li>
+                    <li class="fData">Mi Home</li>
+                    <li class="fData">Mi Authorized Stores</li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <ul class="typeNone">
+                    <li class="fHeader">ABOUT US</li>
+                    <li class="fData">Xiaomi</li>
+                    <li class="fData">Mediakit</li>
+                    <li class="fData">Culture/li>
+                    <li class="fData">User Agreement</li>
+                    <li class="fData">Privacy Policy</li>
+                    <li class="fData">Declarations</li>
+                    <li class="fData">Integrity & Compliance</li>
+                    <li class="fData">Smartphone Quality</li>
+                    <li class="fData">TV Quality</li>
+                    <li class="fData">Service Quality</li>
+                    <li class="fData">Environment</li>
+                    <li class="fData">Sitemap</li>
+                </ul>
+            </div>
+            
+
+
+            <div class="col-2">
+                <ul class="typeNone">
+                    <li class="fHeader">CONTACT US</li>
+                    <li class="fData">Email</li>
+                    <li class="fData">Careers</li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <ul class="typeNone" style=" margin-top: 2vw;">
+                    <li class="fLst">Chat with our Virtual AI Bot</li>
+                    <li class="fLst">(24/7 Live Agent Support)</li>
+                    <li>
+                        <button style="margin-top: 1vw;" type="button" class="btn btn-outline-light">CHAT NOW</button>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        <div class="row">
+            <hr class="solid">
+        </div>
+        <div class="row">
+            <div class="copyright">
+                Copyright © 2010 - 2021 Xiaomi. All Rights Reserved      
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
